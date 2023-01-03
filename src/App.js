@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import  {Container} from './components/styles/Container.styled'
+import Header from './components/header';
+import Button from './components/Button';
+import Modal from './components/Modal';
+import { useState } from 'react';
 
 function App() {
+  const [show,setShow]=useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header/>
+      <Container>
+        <h1> Discover your <span> Hogwarts House </span>  </h1>
+         <Button toggleModel={()=>setShow(true)}/>
+
+         {
+          show && <Modal/>
+         }
+     </Container>
+    </>
   );
 }
 
