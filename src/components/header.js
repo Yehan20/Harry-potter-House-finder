@@ -2,7 +2,7 @@ import { Container } from './styles/Container.styled'
 import { HeaderStyled } from './styles/Header.styled';
 import house  from '../images/houses.png';
 const Header = () => {
-    return (<HeaderStyled>
+    return (<HeaderStyled bg='red'>
         <Container>
             <div>
                <img src={house} alt="House" />

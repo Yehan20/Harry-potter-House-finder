@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ButtonStyled = styled.button`
    display:block;
-   background-color:#333;
+   background-color:${({theme})=>theme.textClr || '#333'};
    outline:3px solid gold;
    color:#fff;
    border:0;
