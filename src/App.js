@@ -13,22 +13,22 @@ function App() {
     textClr: '#333'
 
   }
-  const getData=async()=>{
-    try{
-      const response = await fetch('./questions/questions.json')
-      console.log(response)
-      const data = await response.text();
-      console.log(data)
+  // const getData=async()=>{
+  //   try{
+  //     const response = await fetch('./questions/questions.json')
+  //     console.log(response)
+  //     const data = await response.text();
+  //     console.log(data)
       
-    }catch(error){
-      console.log(error)
-    }
+  //   }catch(error){
+  //     console.log(error)
+  //   }
 
-    //  fetch('./questions/questions.json').then((data)=>data.json()).then(res=>console.log(res)).catch(err=>console.log(err))
-  }
-  useEffect(()=>{
-    getData();
-  },[])
+  //   //  fetch('./questions/questions.json').then((data)=>data.json()).then(res=>console.log(res)).catch(err=>console.log(err))
+  // }
+  // useEffect(()=>{
+  //   getData();
+  // },[])
   const [show, setShow] = useState(false)
   return (
     <>
