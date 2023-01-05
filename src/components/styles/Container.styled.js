@@ -66,7 +66,21 @@ export const StyledModal= styled.div`
      font-weight:600;
      font-style:italic;
      margin-top:1em;
+     cursor:pointer;
+
+     &:hover{
+      background:gold;
+     }
+
+     &:disabled:hover{
+      background:#222;
+     }
+     &:disabled{
+      opacity:0.6;
+      cursor:default;
+     }
   }
+
 
   ul{
     list-style:none;
@@ -117,8 +131,8 @@ export const StyledModal= styled.div`
     height: 12px;
     background: red;
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: 3px;
+    left: 3.2px;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -154,4 +168,12 @@ export const StyledModal= styled.div`
     cursor: pointer;
   }
  
+`
+
+export const StyledHouse = styled.article`
+    border:1px solid red;
+    background-color:${({bg})=>bg[1] || '#ccc'};
+    display:flex;
+    flex-direction:column;
+    text-align-center;
 `
