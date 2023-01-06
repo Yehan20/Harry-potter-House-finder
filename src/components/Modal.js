@@ -1,42 +1,46 @@
 import { StyledModal } from './styles/Container.styled'
 import { StyledHouse } from './styles/Container.styled';
 import Questions from './questions/questions';
-import { useEffect, useState } from 'react';
-import {Houses} from './questions/houses';
-const Modal = ({ closeModal }) => {
+import { useCallback, useEffect, useState } from 'react';
+import { Houses } from './questions/houses';
+const Modal = ({ closeModal,attempts }) => {
+
     const [marks, setMarks] = useState(0)
     const [show, setShow] = useState(true)
     const [currentQuestion, setCurrentQuestion] = useState(1)
     const [questions, setQuestions] = useState(Questions);
-    const [scores, setScores] = useState([]);
-    const [finalScore, setFinalScore] = useState('')
+    const [scores, setScores] = useState([]); // score for each question
+    const [finalScore, setFinalScore] = useState('') // total score arry
 
 
-    const getFinalMarks = () => {
+    const getFinalMarks = useCallback(() => {
         let final = scores.reduce((inititalVal, nextVal) => {
             return inititalVal += nextVal
         }, 0)
-        console.log('final marks is =',final);
+
         setFinalScore(final)
-    }
+    }, [scores])
+
+
 
     useEffect(() => {
+
         setQuestions(Questions.filter(question => question.id === currentQuestion))
         getFinalMarks()
-   
-    }, [currentQuestion])
+
+    }, [currentQuestion, getFinalMarks])
+
 
     const handleClick = () => {
+
         setScores([...scores, marks])
         setCurrentQuestion(currentQuestion + 1)
         setShow(true)
     }
 
-    console.log('render');
 
     return (<StyledModal>
         <div>
-
             <span onClick={closeModal}>&times;</span>
             {
                 questions.map((Question) => {
@@ -55,57 +59,52 @@ const Modal = ({ closeModal }) => {
                                     <label htmlFor={answer}>
                                         {answer}
                                     </label>
-
                                 </li>
                             })
                         }
                         <button disabled={show} onClick={handleClick}>Next</button>
-
-                    </ul>
-
-                })
-
+                    </ul>    
+                 })
             }
-
-            
-           {currentQuestion===(Questions.length + 1) ?<Result finalScore={finalScore}/>:''}
-
+            {currentQuestion === (Questions.length + 1) ? <Result finalScore={finalScore}  attempts={attempts}/> : ''}
         </div>
     </StyledModal>
     );
 }
 
-const Result = ({finalScore}) => {
-   const [house,setHouse]=useState()
-    console.log(Houses);
-    const yourHouse =Houses.find((house)=>{
-        if(finalScore>house.min && finalScore<=house.max){
+const Result = ({ finalScore,attempts }) => {
+    const [house, setHouse] = useState()
+    const yourHouse = Houses.find((house) => {
+
+        if (finalScore > house.min && finalScore <= house.max) {// this is true therefore this find methods finish executes
+            window.localStorage.setItem('house', JSON.stringify({ color: house.color[0], name: house.name, info: house.description, src: house.path, status: 'House Sorted', finished: true,attempts:++attempts }))
             return house;
-            
+
         }
+        return false;
     })
-   
-    useEffect(()=>{
+
+    useEffect(() => {
         setHouse(yourHouse)
-    },[])
 
-    console.log('your house',yourHouse);
-
+    }, [house, yourHouse])
 
     return (
-       <>
-       { house &&
-            <StyledHouse bg={house.color} >
-            <h3>Your House is</h3>
-         
-             <p className="house">
-                 {house.name}
-             </p>
-             <img src={house.path} alt={house.name} />
-       </StyledHouse>
-       }
-       </>
-    
+        <>
+            {house &&
+                <StyledHouse bg={house.color} >
+                    <h2>Your House is</h2>
+                    <img src={house.path} alt={house.name} />
+                    <h3 className="house">
+                        {house.name}
+                    </h3>
+                    <p>
+                        {house.description}
+                    </p>
+                </StyledHouse>
+            }
+        </>
+
     )
 }
 

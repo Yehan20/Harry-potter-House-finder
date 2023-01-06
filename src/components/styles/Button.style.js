@@ -7,7 +7,7 @@ export const ButtonStyled = styled.button`
    color:#fff;
    border:0;
    border-radius:0;
-   font-size:2rem;
+   font-size:1.5rem;
    padding:1em;
    text-transform:uppercase;
    font-family:var(--ff-main);
@@ -15,7 +15,7 @@ export const ButtonStyled = styled.button`
    cursor:pointer;
    font-style:italic;
    text-align:center;
-   margin:1em auto;
+   margin:0.5em auto;
    transition:all 250ms ease-in;
 
    &:hover{

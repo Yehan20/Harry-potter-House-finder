@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
 
-   background-color:${({theme})=>theme.bodyClr};
-   padding:1em;
+   background-color:${({bg})=>bg};
+   padding:0em;
    color:#fff;
 
    div{
@@ -15,6 +15,7 @@ export const HeaderStyled = styled.header`
 
    h2{
     font-size:1.7rem;
+    margin:0;
     text-transform:uppercase;
     letter-spacing:6px;
     font-weight:800;

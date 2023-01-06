@@ -4,11 +4,12 @@ import lettter from '../../images/letter.jpg'
 export const Container = styled.div`
   max-width:1000px;
   width:100%;
-  padding:1em;
+  padding:1.1em 0;
   margin:0 auto;
 
   h1{
     font-size:3.3rem;
+    margin-bottom:0;
     text-align:center;
     color:#fff;
     font-weight:800;
@@ -171,9 +172,85 @@ export const StyledModal= styled.div`
 `
 
 export const StyledHouse = styled.article`
-    border:1px solid red;
-    background-color:${({bg})=>bg[1] || '#ccc'};
+    // border:1px solid red;
+
     display:flex;
     flex-direction:column;
     text-align-center;
+    padding:0.1em;
+    
+    align-items:center;
+
+    h2{
+      font-size:2rem;
+      text-transform:uppercase;
+      font-weight:600;
+      font-style:italic;
+      margin:0;
+      font-family:var(--ff-main);
+    }
+    p{
+      font-size:1.3rem;
+      margin:0;
+      text-align:center;
+      padding:0 2em;
+      font-weight:600;
+      margin-top:0.5em;
+    
+    }
+    h3{
+      color:${({bg})=>bg[1]}
+    }
+    img{
+      max-width:200px;
+      box-shadow:0  0 17.1em 0.1em ${({bg})=>bg[0]};
+      border-radius:17%;
+      padding:1em;
+      width:100%;
+
+    }
+
+
+
+
+`
+
+export const StyledDive = styled.div`
+  color:#fff;
+  font-family:var(--ff-main);
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+   h3{
+    font-size:3rem;
+    grid-column:1/3;
+    margin:0;
+    align-items:start;
+
+   }
+   p{
+    font-size:1.5rem;
+    grid-row:2/2;
+    grid-column:1/3;
+    margin:0;
+   }
+
+
+   span{
+    color:${({bg})=>bg};
+
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+   }
+   
+   
+
+
+  img{
+    max-width:220px;
+    grid-column:3/4;
+    grid-row:1/3;
+    box-shadow:0  0 17.1em 0.1em ${({bg})=>bg};
+    border-radius:17%;
+    padding:1em;
+    
+  }
 `
