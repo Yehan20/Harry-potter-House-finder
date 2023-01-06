@@ -1,7 +1,7 @@
 # Harry Potter House Finder
 
 
-## Harry Potter House Finder ,a fun app that finds your matching Hogwarts house based on your personality , after answering the following 10 questions you will be sorted into one of the hogwart houses
+## Harry Potter House Finder ,a fun app that finds your matching Hogwarts house based on your personality , after answering the following 10 questions you will be sorted into one of the Hogwarts houses
 
 ![](./src/UI/ui-1.PNG)
 ![](./src/UI/ui-2.PNG)
@@ -10,7 +10,7 @@
 
 
 ## 
--Inspired  by the following youtube vedio ['https://www.youtube.com/watch?v=A6ZMAdTHfM8']('Vedio') borrowed the questions from it.
+-Inspired  by the following youtube vedio ['https://www.youtube.com/watch?v=A6ZMAdTHfM8'] borrowed the questions from it.
 
 
 ## Deployment
