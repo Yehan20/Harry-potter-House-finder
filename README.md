@@ -1,5 +1,6 @@
 # Harry Potter House Finder
 
+Link to Application https://harrypotter-house-finder.netlify.app/ 
 
 ## Harry Potter House Finder ,a fun app that finds your matching Hogwarts house based on your personality , after answering the following 10 questions you will be sorted into one of the Hogwarts houses
 
@@ -8,9 +9,9 @@
 
 
 
+## Inspiration
 
-## 
--Inspired  by the following youtube vedio ['https://www.youtube.com/watch?v=A6ZMAdTHfM8'] borrowed the questions from it.
+- Inspired  by the following youtube vedio https://www.youtube.com/watch?v=A6ZMAdTHfM8' borrowed the questions and content  from it.
 
 
 ## Deployment
