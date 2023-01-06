@@ -4,7 +4,7 @@ import lettter from '../../images/letter.jpg'
 export const Container = styled.div`
   max-width:1000px;
   width:100%;
-  padding:1.1em 0;
+  padding:1.1em 1em;
   margin:0 auto;
 
   h1{
@@ -19,6 +19,12 @@ export const Container = styled.div`
 
   span{
     color:gold;
+  }
+
+  @media(max-width:767px){
+   h1{
+      font-size:2rem;
+    }
   }
 `
 
@@ -49,7 +55,8 @@ export const StyledModal= styled.div`
     width: 80%; /* Could be more or less, depending on screen size */
     background-position:left ;
   }
-  
+
+
   h3{
     font-size:1.8rem;
     margin:0;
@@ -168,6 +175,44 @@ export const StyledModal= styled.div`
     text-decoration: none;
     cursor: pointer;
   }
+
+  @media(max-width:767px){
+    div{
+      background-size: 100% 187%;
+    }
+    ul{
+      padding-left:1.5em !important;
+
+    }
+
+    h3{
+      font-size:1.4rem
+    }
+
+    [type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label{
+      font-size:1.2rem;
+    }
+  }
+
+  @media(max-width:767px){
+
+    ul{
+      padding-left:0em !important;
+
+    }
+    h3{
+      font-size:1.1rem;
+    }
+
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label{
+          font-size:1rem;
+        }
+      }
+
+  }
+  
  
 `
 
@@ -207,6 +252,7 @@ export const StyledHouse = styled.article`
       border-radius:17%;
       padding:1em;
       width:100%;
+      
 
     }
 
@@ -251,6 +297,33 @@ export const StyledDive = styled.div`
     box-shadow:0  0 17.1em 0.1em ${({bg})=>bg};
     border-radius:17%;
     padding:1em;
+    margin:0 0 0 auto;
     
+  }
+
+  @media(max-width:767px){
+    &{
+   
+      grid-template-columns:1fr 1fr;
+      justify-items:center;
+      text-align:center;
+      gap:1em;
+    }
+    h3{
+      grid-column:1/ span 2;
+    }
+    img{
+      grid-row:3;
+      grid-column:1/span 2;
+      margin:0 auto;
+    }
+  }
+
+  @media(max-width:320px){
+  
+    h3{
+      font-size:2rem;
+    }
+
   }
 `

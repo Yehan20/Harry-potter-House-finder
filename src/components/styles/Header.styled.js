@@ -9,7 +9,7 @@ export const HeaderStyled = styled.header`
    div{
      display:flex;
      display:flex;
-     justify-content:space-around;
+     justify-content:space-between;
      align-items:center
    }
 
@@ -24,5 +24,12 @@ export const HeaderStyled = styled.header`
   img{
     width:50px;
     border-radius:50%;
+  }
+
+  @media(max-width:767px){
+     div {
+      flex-direction:column;
+      text-align:center;
+    }
   }
 `

@@ -23,4 +23,8 @@ export const ButtonStyled = styled.button`
       outline:3px solid black;
       color:#333;
    }
+
+   @media(max-width:767px){
+      font-size:1rem;
+    }
 `

@@ -1,3 +1,42 @@
+# Harry Potter House Finder
+
+
+
+![](./src/UI/ui-1.PNG)
+![](./src/UI/ui-2.PNG)
+
+
+## Harry Potter House Finder ,a fun app that finds your matching Hogwarts house based on your personality , after answering the following 10 questions you will be sorted into one of the hogwart houses
+
+
+## Inspired  by the following youtube vedio []('https://www.youtube.com/watch?v=A6ZMAdTHfM8') borrowed the questions from it.
+
+
+## Deployment
+- Front End - Netlify
+
+## Features
+
+- Personality Test answer all questions
+- Only 2 attempts are given after that house is permenant
+
+## Tools and technologies used
+
+- create-react-app
+- React + Hooks 
+- Local Storage
+- Styled Components
+
+
+## Lessons learned
+
+- How to Use revelent array methods 
+- Adding styled components to  the project
+- Creating Styled Components
+- How to Communicating with local Storage
+- Creating MCQ Questions
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
