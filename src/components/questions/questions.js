@@ -33,7 +33,48 @@
       ,{answer:'YELLOW & BLACK',marks:10},{answer:'BLUE & BLACK',marks:20}
     ]
   }
-
+  ,
+  {
+    id:6,
+    question:'Which Job you Mostly Identify With',
+    answers:[{answer:"MEDICAL JOB",marks:10},{answer:"HISTORICAL JOB",marks:20},{answer:"FUN JOB",marks:30}
+      ,{answer:'LUCARATIVE',marks:40},{answer:'JOB INVOLING TECH',marks:0}
+    ]
+    
+  },
+  {
+    id:7,
+    question:'Which if a Theif Broke into your House',
+    answers:[{answer:"HIDE",marks:20},{answer:"CALL THE COPS",marks:0},{answer:"DO WHAT HE SAYS",marks:10}
+      ,{answer:'FIGHT HIM',marks:30},{answer:'ACT AS ANOTHER THEIF',marks:40}
+    ]
+    
+  },
+  {
+    id:8,
+    question:'If you are a Wizard and see a wounded Animal what will you do?',
+    answers:[{answer:"HEAL IT",marks:30},{answer:"RUN AWAY",marks:10},{answer:"CALL ANOTHER WIZARD",marks:20}
+      ,{answer:'DONT KNOW WHAT TO DO',marks:0},{answer:'MAKE IT DISSAPEAR',marks:40}
+    ]
+    
+  },
+  {
+    id:9,
+    question:'Do you feel Happy Disturbing Children?',
+    answers:[{answer:"YES",marks:30},{answer:"SOMETIMES",marks:0},{answer:"ALWAYS",marks:40}
+      ,{answer:'NEVER DONE THIS',marks:10},{answer:'NO',marks:20}
+    ]
+    
+  },
+  {
+    id:10,
+    question:'What should your House be',
+    answers:[{answer:"ANYTHING BUT HUFFLEPUFF",marks:20},{answer:"NO IDEA",marks:0},{answer:"ANY ONE OF THE 4",marks:10}
+      ,{answer:'SLYTHERLIN',marks:40},{answer:'ANYTHING BUT SLYTHERIN',marks:30}
+    ]
+    
+  }
+  
   
 ]
 export default questions;

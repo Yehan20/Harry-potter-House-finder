@@ -10,7 +10,7 @@
 
 
 ## 
-Inspired  by the following youtube vedio []('https://www.youtube.com/watch?v=A6ZMAdTHfM8') borrowed the questions from it.
+-Inspired  by the following youtube vedio [Vedio]('https://www.youtube.com/watch?v=A6ZMAdTHfM8') borrowed the questions from it.
 
 
 ## Deployment

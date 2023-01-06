@@ -76,7 +76,7 @@ const Result = ({ finalScore,attempts }) => {
     const [house, setHouse] = useState()
     const yourHouse = Houses.find((house) => {
 
-        if (finalScore > house.min && finalScore <= house.max) {// this is true therefore this find methods finish executes
+        if (finalScore >= house.min && finalScore <= house.max) {// this is true therefore this find methods finish executes
             window.localStorage.setItem('house', JSON.stringify({ color: house.color[0], name: house.name, info: house.description, src: house.path, status: 'House Sorted', finished: true,attempts:++attempts }))
             return house;
 
