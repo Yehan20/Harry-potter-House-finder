@@ -14,7 +14,7 @@
   },
   {
     id:3,
-    question:'What of This animals do you prefer?',
+    question:'What of This animals do you Like?',
     answers:[{answer:"SNAKE",marks:40},{answer:"BIRD",marks:30},{answer:"CAT",marks:20}
       ,{answer:'BUG',marks:10},{answer:'MONKEY',marks:0}
     ]
@@ -44,7 +44,7 @@
   },
   {
     id:7,
-    question:'Which if a Theif Broke into your House',
+    question:'Which will you do if a Theif Broke into your House',
     answers:[{answer:"HIDE",marks:20},{answer:"CALL THE COPS",marks:0},{answer:"DO WHAT HE SAYS",marks:10}
       ,{answer:'FIGHT HIM',marks:30},{answer:'ACT AS ANOTHER THEIF',marks:40}
     ]
