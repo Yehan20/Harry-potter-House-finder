@@ -49,7 +49,7 @@ export const StyledModal= styled.div`
     background-image:url(${lettter});
     background-repeat:no-repeat;
     background-size:cover;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 13% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -137,7 +137,7 @@ export const StyledModal= styled.div`
     content: '';
     width: 12px;
     height: 12px;
-    background: red;
+    background: #000;
     position: absolute;
     top: 3px;
     left: 3.2px;
@@ -211,13 +211,12 @@ export const StyledModal= styled.div`
         }
       }
 
-  }
-  
+  }  
  
 `
 
 export const StyledHouse = styled.article`
-    // border:1px solid red;
+
 
     display:flex;
     flex-direction:column;

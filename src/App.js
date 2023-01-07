@@ -10,8 +10,7 @@ import house  from './images/houses.png';
 
 function App() {
   const theme = {
-    headerClr: 'red',
-    bodyClr: 'green',
+
     textClr: '#333'
 
   }

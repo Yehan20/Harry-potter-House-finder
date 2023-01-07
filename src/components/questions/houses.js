@@ -35,7 +35,7 @@ export const   Houses = [
     },
     {
         id: 4,
-        name: 'Griffindor',
+        name: 'Gryffindor',
         description: 'You are daring brave and ditermined. You are a born leader and fight for whats just. You always stand next to family and friends',
         color: ['#f91313', '#692a00'],
         max:320,
