@@ -47,6 +47,7 @@ const Modal = ({ closeModal,attempts }) => {
                     const { id, question, answers } = Question
 
                     return <ul key={id}>
+                        <h3>Question {`${id}/${Questions.length}`}</h3>
                         <h3>{question}</h3>
                         {
                             answers.map((choice, index) => {
